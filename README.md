@@ -1,1 +1,1 @@
-# graphqlyoga-express
+# graphqlyoga-express-template
