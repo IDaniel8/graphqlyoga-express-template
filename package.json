@@ -29,8 +29,14 @@
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "env-builder": {
     "template": "env/template.env",
