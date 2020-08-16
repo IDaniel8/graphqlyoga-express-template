@@ -1,0 +1,40 @@
+{
+  "name": "graphql-backend",
+  "author": "IDaniel8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/index.js",
+    "env": "env-builder generate --package --",
+    "lint": "eslint \"./src/**/*.js\"",
+    "postinstall": "npm run env"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-safe": "^8.2.0",
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "@rhangai/env-builder": "^0.4.6",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  },
+  "env-builder": {
+    "template": "env/template.env",
+    "output": ".env",
+    "local": ".env.local"
+  }
+}

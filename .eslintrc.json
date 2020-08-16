@@ -1,0 +1,20 @@
+{
+  "env": {
+    "es2020": true,
+    "node": true
+  },
+  "extends": ["airbnb-base", "prettier", "plugin:prettier/recommended", "eslint-config-prettier"],
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": [["@graphql", "./src/graphql"]]
+    }
+  }
+}
