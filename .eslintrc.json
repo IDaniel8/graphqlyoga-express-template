@@ -14,7 +14,11 @@
   },
   "settings": {
     "import/resolver": {
-      "alias": [["@graphql", "./src/graphql"]]
+      "alias": [
+        ["@database", "./src/database"],
+        ["@graphql", "./src/graphql"],
+        ["@utils", "./src/utils"]
+      ]
     }
   }
 }

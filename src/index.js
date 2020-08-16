@@ -1,8 +1,7 @@
 import {GraphQLServer} from 'graphql-yoga';
 import {config} from 'dotenv-safe';
 
-import typeDefs from '@graphql/types';
-import resolvers from '@graphql/resolvers';
+import {typeDefs, resolvers} from '@graphql';
 
 config({
   example: '.env'
