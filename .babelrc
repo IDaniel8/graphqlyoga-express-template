@@ -1,11 +1,21 @@
 {
-  "presets": ["@babel/preset-env"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
   "plugins": [
     [
       "module-resolver",
       {
         "root": ["."],
         "alias": {
+          "@config": "./src/config",
           "@database": "./src/database",
           "@graphql": "./src/graphql",
           "@utils": "./src/utils"

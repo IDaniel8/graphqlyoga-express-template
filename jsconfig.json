@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@config/*": ["./src/config/*"],
       "@database/*": ["./src/database/*"],
       "@graphql/*": ["./src/graphql/*"],
       "@utils/*": ["./src/utils/*"]

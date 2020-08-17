@@ -1,4 +1,4 @@
-import ModelConstants from '@utils/modelConstants';
+import {ModelConstants} from '@utils/constants';
 
 import {BookType, BookQuery, BookRelations} from './book';
 import {AuthorType, AuthorQuery, AuthorRelations} from './author';

@@ -1,4 +1,4 @@
-import ModelConstants from '@utils/modelConstants';
+import {ModelConstants} from '@utils/constants';
 import {books, authors} from '@database/mocks';
 
 const BookType = `
