@@ -1,8 +1,5 @@
-import { config } from 'dotenv-safe'
+import { verifyEnvConfig } from '@config'
 
-config({
-  example: '.env',
-})
-
+verifyEnvConfig()
 // eslint-disable-next-line no-console
 console.log('TEST')
