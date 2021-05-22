@@ -1,9 +1,9 @@
 import { config } from 'dotenv-safe'
 
-function verifyEnvConfig() {
+function envConfig() {
   config({
     example: '.env',
   })
 }
 
-export { verifyEnvConfig }
+export { envConfig }

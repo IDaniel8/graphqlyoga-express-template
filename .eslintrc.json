@@ -19,7 +19,16 @@
   "plugins": ["import", "prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true,
+        "bundledDependencies": true
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
@@ -30,5 +39,6 @@
         ["@utils", "./src/utils"]
       ]
     }
-  }
+  },
+  "ignorePatterns": ["dist/**/*.js"]
 }
